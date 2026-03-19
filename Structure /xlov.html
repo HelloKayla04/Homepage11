@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xlov - Songs</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="gallery-wrapper">
+        <h1>XLOV</h1>
+        <p>SONGS I CAN'T GET OUT OF MY HEAD!.</p>
+         <h5>Hover over to take a listen</h5>
+
+        <div class="song-feed-row">
+            
+            <div class="song-card">
+    <audio id="x1" src="biip.mp3"></audio> 
+    
+    <img src="biip biip.jpg" class="zoom-cd" alt="Biip"
+         onmouseover="
+            document.getElementById('x1').currentTime = 8; 
+            document.getElementById('x1').play();"
+         onmouseout="
+            document.getElementById('x1').pause(); 
+            document.getElementById('x1').currentTime = 0;">
+            
+    <span class="song-name">★ BIII:-P</span>
+</div>
+
+            <div class="song-card">
+                <audio id="x2" src="rizz.mp3"></audio> 
+                <img src="biip biip.jpg" class="zoom-cd" alt="Rizz"
+                     onmouseover="document.getElementById('x2').play()"
+                     onmouseout="document.getElementById('x2').pause(); document.getElementById('x2').currentTime = 0;">
+                <span class="song-name">★ RIZZ</span>
+            </div>
+
+            <div class="song-card">
+                <audio id="x3" src="1only.mp3"></audio> 
+                <img src="1only.jpg" class="zoom-cd" alt="1only"
+                     onmouseover="document.getElementById('x3').play()"
+                     onmouseout="document.getElementById('x3').pause(); document.getElementById('x3').currentTime = 0;">
+                <span class="song-name">★ 1@ONLY</span>
+            </div>
+
+        </div>
+
+        <a href="store-inside.html" class="back-btn">BACK TO LIST</a>
+    </div>
+
+</body>
+</html>

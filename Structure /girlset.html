@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Girlset - Songs</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="gallery-wrapper">
+        <h1>GIRLSET</h1>
+        <p>ALL THESE SONGS ARE BOPS!!</p>
+        <h5>Hover over to take a listen</h5>
+
+        <div class="song-feed-row">
+            
+            <div class="song-card">
+                <audio id="g1" src="GIRLSET 'Little Miss' Lyrics  Little Miss mp3.mp3"></audio> 
+                <img src="LITTLE MISS SWEET.png" class="zoom-cd" alt="Little Miss"
+                     onmouseover="document.getElementById('g1').play()"
+                     onmouseout="document.getElementById('g1').pause(); document.getElementById('g1').currentTime = 0;">
+                <span class="song-name">★ LITTLE MISS</span>
+            </div>
+
+            <div class="song-card">
+                <audio id="g2" src="tweak.mp3"></audio> 
+                <img src="tweak gr.png" class="zoom-cd" alt="Tweak"
+                     onmouseover="document.getElementById('g2').currentTime = 7; document.getElementById('g2').play();"
+                     onmouseout="document.getElementById('g2').pause(); document.getElementById('g2').currentTime = 0;">
+                <span class="song-name">★ TWEAK</span>
+            </div>
+
+            <div class="song-card">
+                <audio id="g3" src="GIRLSET Commas Official Video Ver.mp3"></audio> 
+                <img src="im like commas.png" class="zoom-cd" alt="Commas"
+                     onmouseover="document.getElementById('g3').play()"
+                     onmouseout="document.getElementById('g3').pause(); document.getElementById('g3').currentTime = 0;">
+                <span class="song-name">★ COMMAS</span>
+            </div>
+
+        </div> <a href="store-inside.html" class="back-btn">BACK TO LIST</a>
+
+    </div> </body>
+</html>

@@ -1,0 +1,87 @@
+
+html {
+  
+  background-color: rgb(222, 230, 225); 
+  font-size: 22px;
+  text-align: center;
+}
+
+body {
+ 
+  font-family: "DynaPuff", system-ui;
+  font-weight: 600;
+ 
+  color: rgb(151, 129, 134); 
+  margin: 0;
+  padding: 50px 20px;
+}
+
+/* 2. The Photo Centering */
+.center {
+  display: block;      
+  margin-left: auto;    
+  margin-right: auto;   
+  width: 600px; 
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+
+.intro-text {
+ 
+  color: rgb(247, 202, 214);
+  font-size: 80px;
+  margin-bottom: 40px;
+  
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 50px;
+  margin-bottom: 50px;
+  
+  color: rgb(253, 231, 222);
+  transition: transform 0.3s;
+}
+
+li:hover {
+  transform: scale(1.1);
+  
+  color: rgb(249, 194, 208);
+}
+
+
+h1 {
+  font-size: 125px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 60px;
+  margin: 22px;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-link {
+  display: block;      
+  font-size: 24px;     
+  margin-top: 100px;   
+  margin-bottom: 50px; 
+  text-align: center;
+  
+  color: rgb(151, 129, 134);
+  text-decoration: underline; 
+}

@@ -1,0 +1,113 @@
+
+body {
+   
+    background-image: url('holy aura.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center; 
+    font-family: 'DynaPuff', cursive;
+    color: #5d4037;         
+    overflow-x: hidden;
+}
+
+
+.gallery-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+h1 {
+    font-size: 85px;
+    color: #ff4081;         
+    text-shadow: 4px 4px 0px white; 
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #880e4f;        
+}
+
+
+.song-feed-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;             
+    flex-wrap: wrap;        
+}
+
+.song-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+}
+
+
+.zoom-cd {
+    width: 240px; 
+    height: 240px;
+    object-fit: cover;
+    border: 10px solid white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;        
+}
+
+.zoom-cd:hover {
+    transform: scale(1.15) translateY(-25px); /* Moves "closer" to the me */
+    border-color: #ff80ab;
+    box-shadow: 0 20px 40px rgba(255, 64, 129, 0.3);
+}
+
+
+.song-name {
+    margin-top: 15px;
+    font-size: 17px;
+    background: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 2px dashed #ff80ab;
+    color: #c2185b;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.back-btn {
+    text-decoration: none;
+    color: white;
+    background: #ff80ab;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 4px solid white;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin-top: 60px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #f06292;
+    transform: scale(1.1);
+    box-shadow: 8px 8px 0px rgba(0,0,0,0.1);
+}
