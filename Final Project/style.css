@@ -15,7 +15,7 @@ body{font-family:'Fredoka',sans-serif;color:#4a4a4a;overflow:hidden;background-c
 .floating-nav h1{font-size:1.4rem;color:#ff4d94;letter-spacing:1.5px;text-shadow: 1px 1px 0px #fff;}
 .floating-nav p{font-size:.85rem;color:#ff85b3;font-weight: 500;}
 
-
+/* SCROLL SNAPPING LOGIC */
 .scroll-container{height:100vh;overflow-y:scroll;scroll-snap-type:y mandatory;scroll-behavior:smooth}
 .scroll-container::-webkit-scrollbar{width:10px}
 .scroll-container::-webkit-scrollbar-thumb{background-color:#ff99c2;border-radius:10px;}
@@ -29,11 +29,35 @@ body{font-family:'Fredoka',sans-serif;color:#4a4a4a;overflow:hidden;background-c
 
 .book-labels h2{font-size:3.2rem;color:#333;text-transform: uppercase;letter-spacing: 3px;text-shadow: 3px 3px 0px #fff, 6px 6px 0px rgba(255, 153, 194, 0.3);}
 
-.flipbook-placeholder{width:100%;max-width:960px;height:560px;background-color:#fff;border:8px dashed #ffb3d1;border-radius:50px;display:flex;justify-content:center;align-items:center;box-shadow:25px 25px 0px rgba(255, 153, 194, 0.15);}
-.flipbook-placeholder iframe{border-radius:35px}
+
+.flipbook-placeholder {
+    width: 930px; 
+    height: 530px; 
+    background-color: #fff;
+    border: 8px dashed #ffb3d1;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 0px rgba(255, 153, 194, 0.15);
+}
+
+.flipbook-placeholder iframe {
+    width: 900px !important;
+    height: 500px !important;
+    border-radius: 35px;
+}
 
 @media(max-width:950px){
-    .flipbook-placeholder{height:450px;max-width:92%}
+    .flipbook-placeholder{
+        width: 90%;
+        height: auto;
+        aspect-ratio: 900 / 500;
+    }
+    .flipbook-placeholder iframe {
+        width: 100% !important;
+        height: 100% !important;
+    }
     .book-labels h2{font-size:2rem; letter-spacing: 1px;}
     .floating-nav{width:95%;padding:10px;border-radius:30px}
 }
